@@ -1,0 +1,97 @@
+.container {
+  background: rgb(18, 18, 18);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background: rgb(40, 40, 40);
+  margin: auto;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form a {
+  margin: 40px 0 0 0;
+  padding: 10px 120px;
+  border-radius: 50px;
+  background: rgb(24, 216, 96);
+  color: #fff;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.form a:hover {
+  cursor: pointer;
+  background: rgb(12, 182, 77);
+  transition: all 0.5s ease;
+  transform: translateY(1px) scale(1.1);
+}
+
+.App_logo {
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App_logo {
+    animation: App_logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes App_logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .form {
+    width: 300px;
+  }
+
+  .form a {
+    padding: 10px 80px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .form {
+    width: 200px;
+  }
+
+  .form a {
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  .form {
+    width: 120px;
+  }
+
+  .form a {
+    padding: 10px 20px;
+  }
+
+  .App_logo {
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+  }
+}

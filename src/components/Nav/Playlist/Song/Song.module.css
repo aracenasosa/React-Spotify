@@ -1,0 +1,225 @@
+.border {
+  border: 1px solid rgba(250, 249, 249, 0.7);
+}
+
+.flex {
+  display: flex;
+  margin: 10px 0;
+}
+
+.inner {
+  display: flex;
+}
+
+.containerLeft {
+  margin: 17px 0 0 15px;
+}
+
+.e {
+  font-size: 10px;
+  background: rgb(160, 160, 160);
+  color: #000;
+  padding: 0px 4px;
+  border-radius: 2px;
+  font-weight: bold;
+  margin-right: 5px;
+  height: 18px;
+  width: 15px;
+}
+
+.songName {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2px;
+  transition: all 0.5s ease;
+}
+
+.artistName:hover, .album:hover, .date:hover {
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  text-decoration: underline;
+}
+
+.artistName:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+.album:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+.artistName,
+.number,
+.collaborative,
+.album,
+.date {
+  color: rgb(160, 160, 160);
+  transition: all 0.5s ease;
+}
+
+.number {
+  color: rgb(160, 160, 160);
+  font-weight: bold;
+}
+
+.duration {
+  color: rgb(160, 160, 160);
+}
+
+.duration > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  transition: all 0.4s ease;
+}
+
+.container:hover {
+  background: rgba(160, 160, 160, 0.2);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.container td,
+.container p {
+  transition: all 0.4s ease;
+}
+
+.artistName {
+  display: flex;
+}
+
+.greenHeart {
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.greenHeartFull {
+  color: rgb(29, 185, 84);
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.circleContainer {
+  display: flex;
+  padding: 10px;
+}
+
+.circle {
+  width: 3px;
+  height: 3px;
+  background: rgba(236, 240, 241, 1);
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.options {
+  background: rgb(40, 40, 40);
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  right: 200px;
+  z-index: 0;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.playlistName {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.playlistName:hover {
+  background: rgba(149, 165, 166, 0.3);
+}
+
+.remove {
+  border-bottom: 1px solid rgba(149, 165, 166, 0.3);
+  padding-bottom: 5px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.remove:hover {
+  cursor: pointer;
+  background: rgba(149, 165, 166, 0.3);
+}
+
+.options p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+}
+
+.options p:hover {
+  cursor: pointer;
+}
+
+.x {
+  font-size: 17px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 5px 2px 5px;
+}
+
+.x:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 861px) { 
+
+  .date {
+    display: none;
+  }
+
+} 
+
+@media screen and (max-width: 718px) { 
+
+  .album {
+    display: none;
+  }
+
+} 
+
+@media screen and (max-width: 619px) { 
+
+  .flex {
+    width: 230px;
+  }
+
+  .number {
+    display: none;
+  }
+
+  .duration {
+    width: 20px;
+  }
+
+  .container {
+    width: 250px;
+  }
+
+  .songName {
+    width: 60%;
+  }
+
+  .artistName {
+    width: 90%;
+    display: block;
+  }
+
+  .e {
+    display: none;
+  }
+
+} 
+
+
+

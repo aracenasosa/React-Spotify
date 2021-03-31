@@ -1,0 +1,471 @@
+.container {
+  display: grid;
+  grid-template-columns: 12% 88%;
+}
+
+.header {
+  width: 100%;
+  height: 35vh;
+}
+
+.main {
+  background: rgb(78, 64, 59);
+  background: linear-gradient(
+    180deg,
+    rgba(78, 64, 59, 1) 13%,
+    rgba(32, 32, 33, 1) 28%
+  );
+  height: 100%;
+  width: 100%;
+}
+
+.overlay {
+  background: rgba(78, 64, 59, 0.9); /*rgba( 202, 110, 5, .9 )*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.innerText {
+  width: 80%;
+  margin: 0 0 40px 40px;
+}
+
+.innerText h1 {
+  font-size: 90px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.innerText p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.innerText div > span {
+  margin-left: 5px;
+}
+
+.innerText > div {
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.section_a {
+  width: 95%;
+}
+
+.section_a h1,
+.section_b h1,
+.section_c h1,
+.section_d h1 {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section_a,
+.section_b,
+.section_c,
+.section_d {
+  margin: 80px 0 40px 40px;
+}
+
+.discographyContainer,
+.fansLikeContainer,
+.appearContainer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.artistImg {
+  width: 160px;
+  height: 160px;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.discography {
+  background: rgb(24, 24, 24);
+  padding: 10px;
+  width: 190px;
+  height: 270px;
+  display: flex;
+  flex-flow: wrap column;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.discography:hover {
+  background: rgb(40, 40, 40);
+  cursor: pointer;
+  transform: translateY(-1px) scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.discography h4 {
+  margin: 10px 0 0px 0;
+  color: #fff;
+}
+
+.discography span {
+  color: rgb(144, 144, 144);
+  margin: 5px 0 25px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.discograpyText {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.circle {
+  height: 4px;
+  width: 4px;
+  background: rgb(144, 144, 144);
+  border-radius: 50%;
+  margin: 0 5px 15px 5px;
+}
+
+.imgLike {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.cardLike {
+  background: rgb(24, 24, 24);
+  padding: 10px;
+  width: 180px;
+  height: 270px;
+  display: flex;
+  flex-flow: wrap column;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.cardLike:hover {
+  background: rgb(40, 40, 40);
+  cursor: pointer;
+  transform: translateY(-1px) scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.cardLike h4 {
+  margin: 10px 0 0px 0;
+  color: #fff;
+}
+
+.cardLike p {
+  color: rgb(144, 144, 144);
+  margin: 5px 0 25px 0;
+}
+
+.see {
+  color: rgb(184, 184, 184);
+  margin: 30px 0 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.see:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.appearImg {
+  width: 160px;
+  height: 160px;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.appear {
+  background: rgb(24, 24, 24);
+  padding: 10px;
+  width: 180px;
+  height: 270px;
+  display: flex;
+  flex-flow: wrap column;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.appear:hover {
+  background: rgb(40, 40, 40);
+  cursor: pointer;
+  transform: translateY(-1px) scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.appear h4 {
+  margin: 10px 0 0px 0;
+  color: #fff;
+}
+
+.appear span {
+  color: rgb(144, 144, 144);
+  margin: 5px 0 25px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.appearText {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.arrows {
+  margin: 20px 0 100px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+}
+
+.leftRight img {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.leftRight img:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.section_0 {
+  width: 210px;
+}
+
+.user {
+  background: rgb(5, 5, 5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0px 15px 0 auto;
+  height: 35px;
+}
+
+.user:hover {
+  cursor: pointer;
+  background: rgba(40, 40, 40);
+}
+
+.user p {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.userImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.arrow {
+  width: 22px;
+  height: 22px;
+  margin-left: 3px;
+}
+
+.modal {
+  background: rgb(40, 40, 40);
+  width: 197px;
+  margin: 10px 15px 0 auto;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.modal p {
+  color: rgb(151, 151, 151);
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.modal p:hover {
+  background: rgba(151, 151, 151, 0.3);
+  cursor: pointer;
+}
+
+.hr {
+  margin: 20px 0 0 0;
+  border: 1px solid rgba(151, 151, 151, 0.2);
+  width: 100%;
+}
+
+@media screen and (max-width: 1774px) {
+  .discographyContainer,
+  .fansLikeContainer,
+  .appearContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+
+  .arrows {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1630px) {
+  .discographyContainer,
+  .fansLikeContainer,
+  .appearContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .discographyContainer,
+  .fansLikeContainer,
+  .appearContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .discographyContainer,
+  .fansLikeContainer,
+  .appearContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .innerText {
+    width: 90%;
+  }
+
+  .container {
+    grid-template-columns: 15% 85%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .discographyContainer,
+  .fansLikeContainer,
+  .appearContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .innerText h1 {
+    font-size: 70px;
+  }
+
+  .arrows {
+    margin: 20px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .innerText {
+    width: 90%;
+    margin: 0 0 40px 40px;
+  }
+
+  .container {
+    grid-template-columns: 20% 80%;
+  }
+
+  .songContainer {
+    width: 95%;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .section_a {
+    grid-template-columns: 1fr;
+    margin: 80px 0 40px 10px;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .container {
+    grid-template-columns: 25% 75%;
+  }
+
+  .discographyContainer,
+  .fansLikeContainer,
+  .appearContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+  }
+
+  .innerText h1 {
+    font-size: 50px;
+  }
+
+  .innerText {
+    width: 80%;
+    margin: 0 0 40px 10px;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .container {
+    grid-template-columns: 30% 70%;
+  }
+
+  .innerText h1 {
+    font-size: 30px;
+  }
+
+  .innerText {
+    margin: auto;
+  }
+
+  .discographyContainer,
+  .fansLikeContainer,
+  .appearContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .arrows {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+}
+
+@media screen and (max-width: 495px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

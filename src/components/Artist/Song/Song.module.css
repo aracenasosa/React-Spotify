@@ -1,0 +1,278 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgb(232, 233, 233, 0.8);
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card:hover {
+  background: rgb(41, 44, 45);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.section_a {
+  margin-bottom: 60px;
+  width: 90%;
+}
+
+.card img {
+  width: 45px;
+  height: 45px;
+  margin: 5px 0;
+}
+
+.doblao,
+.doblao2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.space {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+.card div span {
+  margin: 0 15px 0 0;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.card div span:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.e {
+  font-size: 10px;
+  background: rgb(160, 160, 160);
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.songName {
+  color: #fff;
+  font-weight: bold;
+}
+
+.albumName {
+  transition: all 0.3s ease;
+  align-self: center;
+  text-align: center;
+}
+
+.albumName:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.duration {
+  transition: all 0.3s ease;
+  align-self: center;
+  text-align: center;
+}
+
+.duration:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.greenHeart {
+  color: rgba(236, 240, 241, 0.7);
+  margin-right: 15px;
+}
+
+.greenHeartFull {
+  color: rgb(29, 185, 84);
+  margin-right: 15px;
+}
+
+.circleContainer {
+  display: flex;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.circle {
+  width: 3px;
+  height: 3px;
+  background: rgba(236, 240, 241, 1);
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.options {
+  background: rgb(40, 40, 40);
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  right: 450px;
+  z-index: 0;
+}
+
+.playlistName {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.playlistName:hover {
+  background: rgba(149, 165, 166, 0.3);
+}
+
+.playlistName:first-child {
+  border-bottom: 1px solid rgba(149, 165, 166, 0.3);
+  padding-bottom: 5px;
+}
+
+.options p {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+}
+
+.options p:hover {
+  cursor: pointer;
+}
+
+.x {
+  font-size: 17px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 5px 2px 5px;
+}
+
+.x:hover {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1800px) {
+  .options {
+    right: 400px;
+  }
+}
+
+@media screen and (max-width: 1590px) {
+  .options {
+    right: 300px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .options {
+    right: 250px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .options {
+    right: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .options {
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .options {
+    right: 300px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .options {
+    right: 200px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .options {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  .space {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+    flex-flow: column wrap;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .songName {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 747px) {
+  .space {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+    flex-flow: column wrap;
+  }
+
+  .doblao2 {
+    width: 50%;
+  }
+
+  .albumName {
+    width: 70%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .number,
+  .albumName {
+    display: none;
+  }
+
+  .card {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 0 40px 0;
+  }
+
+  .circleContainer {
+    margin-left: 0px;
+  }
+
+  .doblao2 {
+    margin-left: 25px;
+  }
+
+  .card {
+    width: 101%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .duration {
+    display: none;
+  }
+}

@@ -1,0 +1,48 @@
+.artistImg {
+  width: 140px;
+  height: 140px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.card {
+  background: rgb(24, 24, 24);
+  padding: 10px;
+  width: 170px;
+  height: 260px;
+  display: flex;
+  flex-flow: wrap column;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  background: rgb(40, 40, 40);
+  cursor: pointer;
+  transform: translateY(-1px) scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.card h4 {
+  margin: 10px 0 0px 0;
+  color: #fff;
+}
+
+.card p {
+  color: rgb(144, 144, 144);
+  margin: 5px 0 25px 0;
+  font-size: 13px;
+}
+
+.marginContainer {
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 1772px) {
+  .card {
+    width: 180px;
+  }
+}
+
